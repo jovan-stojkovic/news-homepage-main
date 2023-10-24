@@ -30,7 +30,7 @@ nav {
     margin-bottom: 50px;
 }
 
-ul {
+.desktop {
     display: flex;
     gap: 40px;
     
@@ -110,7 +110,7 @@ p {
     justify-content: space-between;
 }
 
-button {
+.read {
     all: unset;
     background-color: var(--Soft-red);
     height: 3rem;
@@ -122,7 +122,7 @@ button {
     font-weight: 700;
 }
 
-button:hover {
+.read:hover {
     background-color: var(--Very-dark-blue);
     cursor: pointer;
 }
@@ -174,4 +174,57 @@ h5:hover {
 
 .small-img {
     height: 130px;
+}
+
+.hamburger {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    background-image: url(assets/images/icon-menu.svg);
+    background-color: white;
+    background-repeat: no-repeat;
+    appearance: none;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    z-index: 5;
+    display: none;
+}
+
+.hamburger.is-active {
+    transition: 0.4s;
+    background-image: url(assets/images/icon-menu-close.svg);
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 200%;
+    width: 70%;
+    min-height: 100vh;
+    z-index: 2;
+    background-color: var(--Off-white);
+    align-items: baseline;
+}
+
+.mobile-nav.is-active {
+    right: 0;
+    transition: 0.4s;
+}
+
+.mobile {
+    margin-top: 150px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.mobile-a {
+    color: var(--Very-dark-blue);
+    font-size:1.2rem;
+
 }

@@ -12,13 +12,14 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
     <title>News homepage</title>
   </head>
   <body>
     <main>
       <nav>
         <img src="assets/images/logo.svg" alt="" />
-        <ul>
+        <ul class="desktop">
           <li>
             <a href="">Home</a>
           </li>
@@ -35,6 +36,27 @@
             <a href="">Categories</a>
           </li>
         </ul>
+        <button class="hamburger">
+        </button>
+      </nav>
+      <nav class="mobile-nav">
+        <ul class="mobile">
+          <li>
+            <a class="mobile-a">Home</a>
+          </li>
+          <li>
+            <a class="mobile-a">New</a>
+          </li>
+          <li>
+            <a class="mobile-a">Popular</a>
+          </li>
+          <li>
+            <a class="mobile-a">Trending</a>
+          </li>
+          <li>
+            <a class="mobile-a">Categories</a>
+          </li>
+        </ul>
       </nav>
       <div class="main-container">
           <img src="assets/images/image-web-3-desktop.jpg" class="web" />
@@ -45,7 +67,7 @@
                 the power of the platforms back into the hands of the people.
                 But is it really fulfilling its promise?
               </p>
-              <button>READ MORE</button>
+              <button class="read">READ MORE</button>
             </div>
         <div class="dark">
           <h2>New</h2>
